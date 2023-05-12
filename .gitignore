@@ -103,3 +103,8 @@ lib/
 
 # Application bundle for Mac OS
 *.app/
+
+# Extras
+*.dproj
+*.ico
+
