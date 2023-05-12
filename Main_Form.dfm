@@ -1,9 +1,9 @@
 object MainForm: TMainForm
   Left = 152
   Top = 180
-  Width = 903
-  Height = 632
   Caption = 'Html2Pdf'
+  ClientHeight = 593
+  ClientWidth = 887
   Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,7 +15,7 @@ object MainForm: TMainForm
   OnDestroy = FormDestroy
   DesignSize = (
     887
-    594)
+    593)
   PixelsPerInch = 96
   TextHeight = 13
   object lbHTML: TLabel
@@ -49,9 +49,9 @@ object MainForm: TMainForm
     ParentFont = False
   end
   object lbMargins: TLabel
-    Left = 494
+    Left = 503
     Top = 539
-    Width = 170
+    Width = 161
     Height = 13
     Alignment = taRightJustify
     Anchors = [akRight, akBottom]
@@ -66,26 +66,28 @@ object MainForm: TMainForm
     TabOrder = 0
     OnClick = btnOpenClick
   end
-  object Viewer: THTMLViewer
+  object Viewer: THtmlViewer
     Left = 8
     Top = 39
     Width = 871
     Height = 491
     Cursor = crDefault
-    TabOrder = 1
-    Anchors = [akLeft, akTop, akRight, akBottom]
-    DefBackground = clWindow
     BorderStyle = htSingle
-    HistoryMaxCount = 0
+    DefBackground = clWindow
     DefFontName = 'Times New Roman'
     DefPreFontName = 'Courier New'
+    HistoryMaxCount = 0
     NoSelect = True
-    CharSet = DEFAULT_CHARSET
+    PrintMarginBottom = 2.000000000000000000
     PrintMarginLeft = 2.000000000000000000
     PrintMarginRight = 2.000000000000000000
     PrintMarginTop = 2.000000000000000000
-    PrintMarginBottom = 2.000000000000000000
     PrintScale = 1.000000000000000000
+    Text = ''
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    TabOrder = 1
+    Touch.InteractiveGestures = [igPan]
+    Touch.InteractiveGestureOptions = [igoPanSingleFingerHorizontal, igoPanSingleFingerVertical, igoPanInertia]
   end
   object btnSave: TButton
     Left = 89
@@ -164,7 +166,6 @@ object MainForm: TMainForm
     Height = 21
     Style = csDropDownList
     Anchors = [akRight, akBottom]
-    ItemHeight = 13
     ItemIndex = 0
     TabOrder = 10
     Text = 'Portrait'
@@ -179,7 +180,6 @@ object MainForm: TMainForm
     Height = 21
     Style = csDropDownList
     Anchors = [akRight, akBottom]
-    ItemHeight = 13
     ItemIndex = 0
     TabOrder = 11
     Text = 'A4'

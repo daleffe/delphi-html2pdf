@@ -14,7 +14,7 @@ interface
 
 uses
     Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-    Dialogs, Html2Pdf, StdCtrls, Htmlview, IniFiles, ShellApi, Printers;
+    Dialogs, Html2Pdf, StdCtrls, Htmlview, IniFiles, ShellApi, Printers, HTMLUn2;
 
 type
   TMainForm = class(TForm)
@@ -59,7 +59,7 @@ uses SynPdf;
 
 {$R *.dfm}
 
-{$R vista.RES} // includes Win10 manifest - use .RES for linux cross-compilation
+//{$R vista.RES} // includes Win10 manifest - use .RES for linux cross-compilation
 
 procedure TMainForm.btnOpenClick(Sender: TObject);
 begin
