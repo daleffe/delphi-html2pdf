@@ -1,16 +1,3 @@
-# Delphi/Lazarus Template
+# HTML to PDF for Delphi
 
- Delphi/Lazarus template project
-
-## Delphi
-
-### RTTI
-
-If you don't use RTTI, put follow lines at start of your project file (.dpr):
-
-```delphi
-{$WEAKLINKRTTI ON}
-{$RTTI EXPLICIT METHODS([]) PROPERTIES([]) FIELDS([])}
-```
-
-It'll save ~500 kb of your generated *.exe*.
+ HTML to PDF converter using SynPDF forked from mORMot.
