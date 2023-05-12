@@ -1,7 +1,7 @@
 program htm2pdf;
 
 uses
-  {$I SynDprUses.inc}
+  //{$I SynDprUses.inc}
   Forms,
   Main_Form in 'Main_Form.pas' {MainForm},
   Html2Pdf in 'Html2Pdf.pas';
